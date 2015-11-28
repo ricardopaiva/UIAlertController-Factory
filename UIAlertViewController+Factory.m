@@ -31,8 +31,7 @@
     
     if (alertControllerStyle == UIAlertControllerStyleActionSheet) {
         UIPopoverPresentationController *popover = alert.popoverPresentationController;
-        if (popover)
-        {
+        if (popover) {
             popover.sourceView = presentingViewController.view;
             popover.sourceRect = [(UIView *)presentingViewController.view bounds];
             popover.permittedArrowDirections = UIPopoverArrowDirectionAny;
@@ -109,8 +108,7 @@
 {
     if (alertControllerStyle == UIAlertControllerStyleActionSheet) {
         UIPopoverPresentationController *popover = alertController.popoverPresentationController;
-        if (popover)
-        {
+        if (popover) {
             popover.sourceView = presentingViewController.view;
             popover.sourceRect = [(UIView *)presentingViewController.view bounds];
             popover.permittedArrowDirections = UIPopoverArrowDirectionAny;
