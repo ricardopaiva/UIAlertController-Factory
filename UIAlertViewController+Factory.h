@@ -30,11 +30,11 @@
 /**
  *  Creates a AlertController with a title and a message.
  *
- *  @param title                <#title description#>
- *  @param message              <#message description#>
- *  @param alertControllerStyle <#alertControllerStyle description#>
+ *  @param title                Alert title
+ *  @param message              Alert message
+ *  @param alertControllerStyle Alert controller style (UIAlertControllerStyle)
  *
- *  @return <#return value description#>
+ *  @return UIAlertController object
  */
 + (nullable id)alertInViewControllerWithTitle:(nonnull NSString *)title
                                       message:(nullable NSString *)message
@@ -43,9 +43,9 @@
 /**
  *  Adds a new actions to the previously created alert controller
  *
- *  @param title                <#title description#>
- *  @param alertControllerStyle <#alertControllerStyle description#>
- *  @param handler              <#handler description#>
+ *  @param title                Action title
+ *  @param alertControllerStyle Alert controller style (UIAlertControllerStyle)
+ *  @param handler              Action handler block
  */
 - (void)addActionWithTitle:(nonnull NSString *)title
                      style:(UIAlertActionStyle)alertControllerStyle
