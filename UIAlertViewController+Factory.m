@@ -51,8 +51,8 @@
 }
 
 + (nullable id)alertInViewControllerWithTitle:(NSString *)title
-                                  withMessage:(NSString *)message
-                                    withStyle:(UIAlertControllerStyle)alertControllerStyle
+                                      message:(NSString *)message
+                                        style:(UIAlertControllerStyle)alertControllerStyle
 {
     
     //    if ([UIAlertController class]) {  // iOS 8 or above
@@ -79,8 +79,8 @@
 }
 
 - (void)addActionWithTitle:(NSString *)title
-                 withStyle:(UIAlertActionStyle)alertControllerStyle
-               withHandler:(void (^ __nullable)(UIAlertAction *action))handler
+                     style:(UIAlertActionStyle)alertControllerStyle
+                   handler:(void (^ __nullable)(UIAlertAction * _Nullable action))handler
 {
     //    if ([UIAlertController class]) {  // iOS 8 or above
     
@@ -104,7 +104,9 @@
 
 #pragma mark - Private methods
 
-+ (void)presentAlertController:(nonnull UIAlertController *)alertController inViewController:(nonnull UIViewController *)presentingViewController withActionControllerStyle:(UIAlertControllerStyle)alertControllerStyle
++ (void)presentAlertController:(nonnull UIAlertController *)alertController
+              inViewController:(nonnull UIViewController *)
+presentingViewController withActionControllerStyle:(UIAlertControllerStyle)alertControllerStyle
 {
     if (alertControllerStyle == UIAlertControllerStyleActionSheet) {
         UIPopoverPresentationController *popover = alertController.popoverPresentationController;
