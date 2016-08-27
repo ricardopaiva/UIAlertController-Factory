@@ -1,5 +1,5 @@
 //
-//  UIAlertViewController+Factory.h
+//  UIAlertController+Factory.h
 //  Jogo das Palavras
 //
 //  Created by Ricardo Paiva on 15/10/15.
