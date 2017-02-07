@@ -23,7 +23,6 @@
 + (void)presentAlertInViewController:(nonnull UIViewController *)presentingViewController
                                title:(nonnull NSString *)title
                              message:(nullable NSString *)message
-                         buttonTitle:(nonnull NSString *)buttonTitle
                       preferredStyle:(UIAlertControllerStyle)alertControllerStyle
                           completion:(void (^ __nullable)(void))completion NS_AVAILABLE_IOS(5_0);
 
