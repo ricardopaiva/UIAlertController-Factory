@@ -28,6 +28,23 @@
                           completion:(void (^ __nullable)(void))completion NS_AVAILABLE_IOS(5_0);
 
 /**
+ *  Presents a AlertController with a title, a message and a single button.
+ *
+ *  @param presentingViewController ViewController where alert controller should be shown.
+ *  @param title                    Alert title
+ *  @param message                  Alert message
+ *  @param buttonTitle              Button title
+ *  @param alertControllerStyle     alert controller style (UIAlertControllerStyle)
+ *  @param completion               completion block
+ */
++ (void)presentAlertInViewController:(nonnull UIViewController *)presentingViewController
+                               title:(nonnull NSString *)title
+                             message:(nullable NSString *)message
+                         buttonTitle:(nonnull NSString *)buttonTitle
+                      preferredStyle:(UIAlertControllerStyle)alertControllerStyle
+                          completion:(void (^ __nullable)(void))completion NS_AVAILABLE_IOS(5_0);
+
+/**
  *  Creates a AlertController with a title and a message.
  *
  *  @param title                Alert title
