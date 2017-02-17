@@ -13,7 +13,6 @@
 + (void)presentAlertInViewController:(nonnull UIViewController *)presentingViewController
                                title:(nonnull NSString *)title
                              message:(nullable NSString *)message
-                      preferredStyle:(UIAlertControllerStyle)alertControllerStyle
                           completion:(void (^ __nullable)(void))completion NS_AVAILABLE_IOS(5_0)
 {
     [UIAlertController
@@ -22,6 +21,21 @@
      message:message
      buttonTitle:@"OK"
      preferredStyle:UIAlertControllerStyleAlert
+     completion:completion];
+}
+
++ (void)presentAlertInViewController:(nonnull UIViewController *)presentingViewController
+                               title:(nonnull NSString *)title
+                             message:(nullable NSString *)message
+                      preferredStyle:(UIAlertControllerStyle)alertControllerStyle
+                          completion:(void (^ __nullable)(void))completion NS_AVAILABLE_IOS(5_0)
+{
+    [UIAlertController
+     presentAlertInViewController:presentingViewController
+     title:NSLocalizedString(@"GAME_TITLE", nil)
+     message:message
+     buttonTitle:@"OK"
+     preferredStyle:alertControllerStyle
      completion:completion];
 }
 
