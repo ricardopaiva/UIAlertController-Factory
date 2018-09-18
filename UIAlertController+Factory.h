@@ -80,4 +80,15 @@
                      style:(UIAlertActionStyle)alertControllerStyle
                    handler:(void (^ __nullable)(UIAlertAction * _Nullable action))handler;
 
+/**
+ *  Presents a previous created alert controller
+ *
+ *  @param alertController              Alert controller to be presented
+ *  @param presentingViewController     View controller where alert controller will be displayed
+ *  @param alertControllerStyle         Alert controller style (UIAlertControllerStyle)
+ */
++ (void)presentAlertController:(nonnull UIAlertController *)alertController
+              inViewController:(nonnull UIViewController *)presentingViewController
+     withActionControllerStyle:(UIAlertControllerStyle)alertControllerStyle;
+
 @end
