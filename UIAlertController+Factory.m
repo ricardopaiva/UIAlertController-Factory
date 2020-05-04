@@ -51,14 +51,14 @@
      alertControllerWithTitle:title
      message:message
      preferredStyle:alertControllerStyle];
-    
+
     UIAlertAction* okAction = [UIAlertAction actionWithTitle:buttonTitle style:UIAlertActionStyleDefault handler:nil];
     [alert addAction:okAction];
-    
+
     [UIAlertController presentAlertController:alert
                              inViewController:presentingViewController
                     withActionControllerStyle:alertControllerStyle];
-    
+
 //    if (alertControllerStyle == UIAlertControllerStyleActionSheet) {
 //        UIPopoverPresentationController *popover = alert.popoverPresentationController;
 //        if (popover) {
@@ -80,7 +80,7 @@
      alertControllerWithTitle:title
      message:message
      preferredStyle:alertControllerStyle];
-    
+
     return alert;
 }
 
@@ -108,7 +108,7 @@
             popover.permittedArrowDirections = UIPopoverArrowDirectionAny;
         }
     }
-    
+
     [presentingViewController presentViewController:alertController animated:YES completion:nil];
 }
 
