@@ -65,7 +65,7 @@
  *
  *  @return UIAlertController object
  */
-+ (nullable id)alertInViewControllerWithTitle:(nonnull NSString *)title
++ (nullable instancetype)alertInViewControllerWithTitle:(nonnull NSString *)title
                                       message:(nullable NSString *)message
                                         style:(UIAlertControllerStyle)alertControllerStyle;
 
